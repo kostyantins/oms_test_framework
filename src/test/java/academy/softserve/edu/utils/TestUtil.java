@@ -61,4 +61,17 @@ public final class TestUtil {
                 .build()
         );
     }
+
+    public static final int createValidOrderItem() {
+
+        return DBHandler.createOrderItem(OrderItem.newBuilder()
+                .setId(0)
+                .setCost(10)
+                .setItemPrice(10)
+                .setQuantity(2)
+                .setDimensionReference(2)
+                .setOrderReference(7)
+                .setProductReference(6)
+                .build());
+    }
 }
